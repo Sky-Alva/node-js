@@ -1,0 +1,59 @@
+GET http://localhost:5000/user/list
+
+###
+
+POST http://localhost:5000/user/add
+Content-Type: application/json
+
+{
+    "username" : "sky1",
+    "password" : "123456",
+    "name" : "Sky",
+    "role": "Chef"
+}
+
+###
+
+GET http://localhost:5000/user/adassdadas/adasdasdasdasda
+
+###
+
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "username": "sky" ,
+    "password": "123456"
+}
+
+###
+
+PUT http://localhost:5000/user/sky/password
+Content-Type: application/json
+
+{
+    "password" : "AJSdkas"
+}
+
+###
+
+DELETE http://localhost:5000/user/sky/profile
+
+###
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "username":"sky",
+    "password":"123456"
+}
+
+###
+GET http://localhost:5000/user/list
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTJjNWJjZmExOWE1MzFhYTk3NWRmZSIsInVzZXJuYW1lIjoic2t5IiwibmFtZSI6IlNreSIsInJvbGUiOiJDaGVmIiwiaWF0IjoxNjk2MzMzODYxLCJleHAiOjE2OTg5MjU4NjF9.QN3azEPvafqdRvmfjByRCKXPWrS5JP3PikYE9-2_lq4
+
+###
+POST http://localhost:5000/user/picture
+###
+
+POST http://localhost:5000/battery/add/Station1/100kWH/103
